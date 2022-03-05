@@ -27,12 +27,12 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 
 ## Steps to install
--- run composer install
--- run cp .env.example .env
--- configure your env database properly
--- run php artisan key:generate
--- run php artisan migrate
--- run php artisan serve 
+- run composer install
+- run cp .env.example .env
+- configure your env database properly
+- run php artisan key:generate
+- run php artisan migrate
+- run php artisan serve 
 
 
 
