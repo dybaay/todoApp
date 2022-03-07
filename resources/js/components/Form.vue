@@ -37,11 +37,10 @@ export default {
                 this.$store.dispatch("createTask", this.formData).then(resp => {
                     this.todos = this.$store.getters.response
                     this.$emit('added', this.todos)
-                    alert('Added.')
                 }).catch(error => {
                     console.error(this.$store.getters.errors);
                 })
-
+                this.formData.todo_content=''
             }
 
         },
